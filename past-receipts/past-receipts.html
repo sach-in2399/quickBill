@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="past-receipts.css">
+    <title>Past Receipts</title>
+</head>
+<body>
+
+    <div class="header">
+        <span class="back-arrow" onclick="goBack()">&larr;</span> My Orders
+    </div>
+
+    <div class="order-container" onclick="gotoBill()">
+        <div class="order-status completed">Paid on Aug 21' 24</div>
+        <div class="order-items">
+            <img src="../past-receipts/preview.png" alt="Item Image">
+            <div class="order-info">
+                <div>Grocery Basket (4 items)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="order-container" onclick="gotoBill()">
+        <div class="order-status completed">Paid on July 21' 24</div>
+        <div class="order-items">
+            <img src="../past-receipts/preview.png" alt="Item Image">
+            <div class="order-info">
+                <div>Grocery Basket (4 items)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="order-container" onclick="gotoBill()">
+        <div class="order-status incomplete">Payment not completed</div>
+        <div class="order-items">
+            <img src="../past-receipts/preview.png" alt="Item Image">
+            <div class="order-info">
+                <div>Grocery Basket (4 items)</div>
+            </div>
+        </div>
+        <div class="order-warning">
+            Payment not successful. Please contact your bank for any money deducted.
+        </div>
+    </div>
+
+    <div class="order-container" onclick="gotoBill()">
+        <div class="order-status completed">Paid on Jan 21' 23</div>
+        <div class="order-items">
+            <img src="../past-receipts/preview.png" alt="Item Image">
+            <div class="order-info">
+                <div>Grocery Basket (4 items)</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+        function gotoBill() {
+            window.location.href = "../bill/bill.html"; 
+        }
+    </script>    
+</body>
+</html>

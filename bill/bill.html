@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice</title>
+    <link rel="stylesheet" href="bill.css" />
+  </head>
+
+  <body>
+    <div class="invoice-container">
+      <div class="invoice-header">
+        <div class="company-details">
+          <span class="back-arrow" onclick="goBack()"
+            >&larr;
+            <h1>Electronics Hub</h1>
+          </span>
+          <p>
+            1234 Main Street<br />
+            Dallas, TX 75201<br />
+            USA<br />
+            Phone: (123) 456-7890<br />
+            Email: info@electronics-hub.com
+          </p>
+        </div>
+        <div class="invoice-title">
+          <h1>INVOICE</h1>
+          <p>
+            <strong>Invoice No:</strong> 001<br />
+            <strong>Date:</strong> Aug 30, 2024
+          </p>
+        </div>
+      </div>
+
+      <table class="invoice-details">
+        <thead>
+          <tr>
+            <th colspan="2">Billed To</th>
+            <th colspan="2">Invoice Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="2">
+              Ms. Mary Q. Dunston<br />
+              7896 Shadow Brook Apt. 5<br />
+              San Francisco, CA 94121<br />
+              USA
+            </td>
+            <td colspan="2">
+              <strong>Invoice Date:</strong> Aug 30, 2024<br />
+              <strong>Due Date:</strong> Sep 10, 2024
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Invoice Items -->
+      <table class="invoice-details">
+        <thead>
+          <tr>
+            <th>Item & Description</th>
+            <th>Qty</th>
+            <th>Rate</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Camera with advanced shooting capabilities</td>
+            <td>1</td>
+            <td>$750.00</td>
+            <td>$750.00</td>
+          </tr>
+          <tr>
+            <td>Wireless Tracker for asset monitoring</td>
+            <td>2</td>
+            <td>$125.00</td>
+            <td>$250.00</td>
+          </tr>
+          <tr>
+            <td>Lighting equipment system for home studio</td>
+            <td>1</td>
+            <td>$350.00</td>
+            <td>$350.00</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Invoice Summary -->
+      <div class="invoice-summary">
+        <table>
+          <tbody>
+            <tr>
+              <th>Total Price</th>
+              <td>$1,350.00</td>
+            </tr>
+            <tr>
+              <th>Tax (10%)</th>
+              <td>$135.00</td>
+            </tr>
+            <tr>
+              <th><strong>Balance Due</strong></th>
+              <td><strong>$1,485.00</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="invoice-footer">
+        Thank you for your business.<br />
+        If you have any questions about this invoice, please contact<br />
+        Phone: (123) 456-7890 | Email: billing@electronics-hub.com
+      </div>
+    </div>
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+  </body>
+</html>

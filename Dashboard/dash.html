@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing App Dashboard</title>
+    <link rel="stylesheet" href="dash.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="menu" onclick="toggleSidebar()">&#9776;</div>
+        <div class="profile" ><a href="../profile/profile.html">&#128100;</a></div>
+    </div>
+    
+    <div class="sidebar" id="sidebar">
+        <a href="../profile/profile.html" onclick="closeSidebar()">Profile</a>
+        <a href="../past-receipts/past-receipts.html" onclick="closeSidebar()">Invoices</a>
+        <a href="#" onclick="closeSidebar()">Delivery Challans</a>
+        <a href="#" onclick="closeSidebar()">Report</a>
+        <a href="../bill/bill.html" onclick="closeSidebar()">Expenses</a>
+    </div>
+
+    <div class="container" id="container">
+        <h1>Hello User!</h1>
+    </div>
+
+    <div class="container">
+      <img src="IMAGESd/back2.jpg" alt="Sample Image">
+  </div>
+    <!-- quickcreate -->
+
+    <div class="quick-create">
+      <h2>QuickCreate</h2>
+      <div class="grid-container">
+          <div class="item">
+              <img src="IMAGESd/invoice2.png" alt="Invoice">
+              <button id="btn" ><a href="../InvoiceCreate/index.html">Invoice</a></button>
+          </div>
+          <div class="item">
+              <img src="IMAGESd/expense.png" alt="Expense">
+              <button onclick="window.location.href='../bill/bill.html'">Expense</button>
+          </div>
+          <div class="item">
+              <img src="IMAGESd/report.png" alt="Report">
+              <button>Report</button>
+          </div>
+          <div class="item">
+              <img src="IMAGESd/past.jpg" alt="Records">
+              <button onclick="window.location.href='../past-receipts/past-receipts.html'">Records</button>
+          </div>
+      </div>
+  </div>
+    <script src="dash.js"></script>
+</body>
+</html>

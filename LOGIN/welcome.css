@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('back1.jpg');  
+  background-color: #f4f4f4;
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for better readability */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 90%; /* Adjust width for responsiveness */
+  max-width: 500px; /* Ensure the container doesn't become too wide */
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #0d4682;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+    width: 95%; /* Ensure the container takes more width on small screens */
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 14px; /* Slightly smaller font size */
+    padding: 10px 15px; /* Adjust padding for smaller screens */
+  }
+}
